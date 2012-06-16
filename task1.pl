@@ -1,6 +1,5 @@
 #!/usr/local/bin/perl
 # task1.pl
-# random addition
 
 use strict;
 use warnings;
