@@ -8,6 +8,7 @@ import urllib
 def main():
     fileIn = open("input.txt","r")  # opens file of common species for reading
     # we skip the first line: "Overlapping species"
+    ## Can get rid of "name =" in following line, to avoid confusion.
     name = fileIn.readline()    # reads output line by line
     name = fileIn.readline()    # reads output line by line
 
@@ -35,9 +36,9 @@ def main():
         name = fileIn.readline()
         
     fileIn.close()
-
+    ## Can we use more descriptive variable names for j and L
     j = 1     # used for naming files
-
+    ## Instead of using number, can use the length of the list L? len()
     for x in xrange(0,number):   # 0 <= x < number        
         for y in xrange(x+1,number): # x+1 <= y < number
             if L[x] < L[y]:
